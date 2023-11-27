@@ -1,0 +1,29 @@
+using web.Models;
+using Microsoft.EntityFrameworkCore;
+
+namespace web.Data
+{
+    public class EZdb : DbContext
+    {
+        public EZdb(DbContextOptions<SchoolContext> options) : base(options)
+        {
+        }
+
+        public DbSet<Door> Doors { get; set; }
+        public DbSet<Landlord> Landlords { get; set; }
+        public DbSet<Property> Properties { get; set; }
+        public DbSet<Rent> Rent { get; set; }
+        public DbSet<Review> Review { get; set; }
+        public DbSet<User> Users { get; set; }
+        protected override void OnModelCreating(ModelBuilder modelBuilder)
+        {
+            modelBuilder.Entity<Door>().ToTable("Door");
+            modelBuilder.Entity<Landlord>().ToTable("Landlord");
+            modelBuilder.Entity<Property>().ToTable("Property");
+            modelBuilder.Entity<Rent>().ToTable("Rent");
+            modelBuilder.Entity<Review>().ToTable("Review");
+            modelBuilder.Entity<Users>().ToTable("Users");
+        }
+    }
+    
+}
