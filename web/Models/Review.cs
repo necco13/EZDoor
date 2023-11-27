@@ -7,6 +7,6 @@ namespace web.Models;
 public class Review{
     public int ID {get;set;}
     public Stars Stars{get;set;}
-    public String comment {get;set;}
-    public Rent rent {get;set;}
+    public String Comment {get;set;}
+    public Rent Rent {get;set;}
 }
