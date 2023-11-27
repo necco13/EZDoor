@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "O6iN8mC6lqelokr4ex25GCvvfCpXXCZDHRjy7tzOiAN+sMwTlAY1EqgT4J5+uDugQ64ikp9MluwcZ6L1UW4Sog==",
+  "dgSpecHash": "F0a41+sP6KO+VGExFeGSfG1/XBDU9NrLvymFmOrNPnjLhLW5rfFR5RyLI7WN3DxZA36A64D8AjX8kX9xv4MfBA==",
   "success": true,
   "projectFilePath": "C:\\Users\\Nejc\\Desktop\\Faks\\2. letnik\\EZDoor\\web\\web.csproj",
   "expectedPackageFiles": [
@@ -82,6 +82,7 @@
     "C:\\Users\\Nejc\\.nuget\\packages\\microsoft.entityframeworkcore.design\\8.0.0\\microsoft.entityframeworkcore.design.8.0.0.nupkg.sha512",
     "C:\\Users\\Nejc\\.nuget\\packages\\microsoft.entityframeworkcore.relational\\8.0.0\\microsoft.entityframeworkcore.relational.8.0.0.nupkg.sha512",
     "C:\\Users\\Nejc\\.nuget\\packages\\microsoft.entityframeworkcore.sqlserver\\8.0.0\\microsoft.entityframeworkcore.sqlserver.8.0.0.nupkg.sha512",
+    "C:\\Users\\Nejc\\.nuget\\packages\\microsoft.entityframeworkcore.tools\\8.0.0\\microsoft.entityframeworkcore.tools.8.0.0.nupkg.sha512",
     "C:\\Users\\Nejc\\.nuget\\packages\\microsoft.extensions.caching.abstractions\\8.0.0\\microsoft.extensions.caching.abstractions.8.0.0.nupkg.sha512",
     "C:\\Users\\Nejc\\.nuget\\packages\\microsoft.extensions.caching.memory\\8.0.0\\microsoft.extensions.caching.memory.8.0.0.nupkg.sha512",
     "C:\\Users\\Nejc\\.nuget\\packages\\microsoft.extensions.configuration.abstractions\\8.0.0\\microsoft.extensions.configuration.abstractions.8.0.0.nupkg.sha512",

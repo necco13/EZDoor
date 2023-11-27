@@ -6,5 +6,4 @@ public class Rent{
     public DateTime End {get;set;}
     public User User {get;set;}
     public Property Property {get;set;}
-    public Review Review {get;set;}
 }
