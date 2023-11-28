@@ -12,8 +12,8 @@ using web.Data;
 namespace web.Migrations
 {
     [DbContext(typeof(EZdb))]
-    [Migration("20231128231454_start")]
-    partial class start
+    [Migration("20231128235142_AutoIncrementID")]
+    partial class AutoIncrementID
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)

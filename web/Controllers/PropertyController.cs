@@ -59,15 +59,15 @@ namespace web.Controllers
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Name,Address,Notes")] Property @property)
+        public async Task<IActionResult> Create([Bind("Name,Address,Notes")] Property @property)
         {
             var currentUser = await _landlord.GetUserAsync(User);
-            if (ModelState.IsValid)
-            {
+            //if (ModelState.IsValid)
+            //{
                 _context.Add(@property);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            }
+            //}
             return View(@property);
         }
 

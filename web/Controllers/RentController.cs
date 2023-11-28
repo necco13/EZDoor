@@ -59,12 +59,12 @@ namespace web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("ID,Start,End")] Rent rent)
         {
-            if (ModelState.IsValid)
-            {       
+            //if (ModelState.IsValid)
+            //{       
                 _context.Add(rent);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            }
+            //}
             return View(rent);
         }
 
