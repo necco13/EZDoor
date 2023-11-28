@@ -6,5 +6,5 @@ public class Property{
     public String Notes {get;set;}
 
     ICollection<Rent> Rents {get;set;}
-    public Landlord Landlord {get;set;}
+    public User Landlord {get;set;}
 }
