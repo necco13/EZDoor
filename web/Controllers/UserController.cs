@@ -2,6 +2,8 @@ using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
@@ -10,13 +12,17 @@ using web.Models;
 
 namespace web.Controllers
 {
+    [Authorize]
     public class UserController : Controller
     {
         private readonly EZdb _context;
 
-        public UserController(EZdb context)
+        private readonly UserManager<User> _usermanager;
+
+        public UserController(EZdb context, UserManager<User> userManager )
         {
             _context = context;
+            _usermanager = userManager;
         }
 
         // GET: User
@@ -56,6 +62,7 @@ namespace web.Controllers
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> Create([Bind("Id,UserName,NormalizedUserName,Email,NormalizedEmail,EmailConfirmed,PasswordHash,SecurityStamp,ConcurrencyStamp,PhoneNumber,PhoneNumberConfirmed,TwoFactorEnabled,LockoutEnd,LockoutEnabled,AccessFailedCount")] User user)
         {
+            var currentUser = await _usermanager.GetUserAsync(User); 
             if (ModelState.IsValid)
             {
                 _context.Add(user);
