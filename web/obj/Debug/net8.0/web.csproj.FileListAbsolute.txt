@@ -520,3 +520,8 @@ C:\Users\marti\Documents\GitHub\EZDoor\web\obj\Debug\net8.0\refint\web.dll
 C:\Users\marti\Documents\GitHub\EZDoor\web\obj\Debug\net8.0\web.pdb
 C:\Users\marti\Documents\GitHub\EZDoor\web\obj\Debug\net8.0\web.genruntimeconfig.cache
 C:\Users\marti\Documents\GitHub\EZDoor\web\obj\Debug\net8.0\ref\web.dll
+C:\Users\Nejc\Desktop\Faks\2. letnik\EZDoor\web\bin\Debug\net8.0\Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore.dll
+C:\Users\Nejc\Desktop\Faks\2. letnik\EZDoor\web\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\Nejc\Desktop\Faks\2. letnik\EZDoor\web\bin\Debug\net8.0\Microsoft.AspNetCore.Identity.UI.dll
+C:\Users\Nejc\Desktop\Faks\2. letnik\EZDoor\web\bin\Debug\net8.0\Microsoft.Extensions.FileProviders.Abstractions.dll
+C:\Users\Nejc\Desktop\Faks\2. letnik\EZDoor\web\obj\Debug\net8.0\web.MvcApplicationPartsAssemblyInfo.cs
