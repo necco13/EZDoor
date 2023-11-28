@@ -58,12 +58,32 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/2. letnik/EZDoor/web/Views/Home/Index.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
+[C:/Users/Nejc/Desktop/Faks/2. letnik/EZDoor/web/Views/Door/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9vclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/2. letnik/EZDoor/web/Views/Home/Privacy.cshtml]
-build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxQcml2YWN5LmNzaHRtbA==
+[C:/Users/Nejc/Desktop/Faks/2. letnik/EZDoor/web/Views/Door/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9vclxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nejc/Desktop/Faks/2. letnik/EZDoor/web/Views/Door/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9vclxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nejc/Desktop/Faks/2. letnik/EZDoor/web/Views/Door/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9vclxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nejc/Desktop/Faks/2. letnik/EZDoor/web/Views/Door/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9vclxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nejc/Desktop/Faks/2. letnik/EZDoor/web/Views/Home/About.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nejc/Desktop/Faks/2. letnik/EZDoor/web/Views/Home/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Nejc/Desktop/Faks/2. letnik/EZDoor/web/Views/Property/Create.cshtml]
@@ -84,6 +104,46 @@ build_metadata.AdditionalFiles.CssScope =
 
 [C:/Users/Nejc/Desktop/Faks/2. letnik/EZDoor/web/Views/Property/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nejc/Desktop/Faks/2. letnik/EZDoor/web/Views/Rent/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudFxDcmVhdGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nejc/Desktop/Faks/2. letnik/EZDoor/web/Views/Rent/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudFxEZWxldGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nejc/Desktop/Faks/2. letnik/EZDoor/web/Views/Rent/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudFxEZXRhaWxzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nejc/Desktop/Faks/2. letnik/EZDoor/web/Views/Rent/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudFxFZGl0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nejc/Desktop/Faks/2. letnik/EZDoor/web/Views/Rent/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudFxJbmRleC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nejc/Desktop/Faks/2. letnik/EZDoor/web/Views/Review/Create.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3XENyZWF0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nejc/Desktop/Faks/2. letnik/EZDoor/web/Views/Review/Delete.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3XERlbGV0ZS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nejc/Desktop/Faks/2. letnik/EZDoor/web/Views/Review/Details.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3XERldGFpbHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nejc/Desktop/Faks/2. letnik/EZDoor/web/Views/Review/Edit.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3XEVkaXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[C:/Users/Nejc/Desktop/Faks/2. letnik/EZDoor/web/Views/Review/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [C:/Users/Nejc/Desktop/Faks/2. letnik/EZDoor/web/Views/Shared/Error.cshtml]

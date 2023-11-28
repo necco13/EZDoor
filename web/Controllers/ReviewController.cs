@@ -7,30 +7,25 @@ using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using web.Data;
 using web.Models;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
 
 namespace web.Controllers
 {
-    [Authorize]
-    public class PropertyController : Controller
+    public class ReviewController : Controller
     {
         private readonly EZdb _context;
-        private readonly UserManager<User> _landlord;
 
-        public PropertyController(EZdb context, UserManager<User> landlord)
+        public ReviewController(EZdb context)
         {
-            _landlord = landlord;
             _context = context;
         }
 
-        // GET: Property
+        // GET: Review
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Properties.ToListAsync());
+            return View(await _context.Review.ToListAsync());
         }
 
-        // GET: Property/Details/5
+        // GET: Review/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -38,40 +33,39 @@ namespace web.Controllers
                 return NotFound();
             }
 
-            var @property = await _context.Properties
+            var review = await _context.Review
                 .FirstOrDefaultAsync(m => m.ID == id);
-            if (@property == null)
+            if (review == null)
             {
                 return NotFound();
             }
 
-            return View(@property);
+            return View(review);
         }
 
-        // GET: Property/Create
+        // GET: Review/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Property/Create
+        // POST: Review/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Name,Address,Notes")] Property @property)
+        public async Task<IActionResult> Create([Bind("ID,Stars,Comment")] Review review)
         {
-            var currentUser = await _landlord.GetUserAsync(User);
             if (ModelState.IsValid)
             {
-                _context.Add(@property);
+                _context.Add(review);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(@property);
+            return View(review);
         }
 
-        // GET: Property/Edit/5
+        // GET: Review/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -79,22 +73,22 @@ namespace web.Controllers
                 return NotFound();
             }
 
-            var @property = await _context.Properties.FindAsync(id);
-            if (@property == null)
+            var review = await _context.Review.FindAsync(id);
+            if (review == null)
             {
                 return NotFound();
             }
-            return View(@property);
+            return View(review);
         }
 
-        // POST: Property/Edit/5
+        // POST: Review/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Name,Address,Notes")] Property @property)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Stars,Comment")] Review review)
         {
-            if (id != @property.ID)
+            if (id != review.ID)
             {
                 return NotFound();
             }
@@ -103,12 +97,12 @@ namespace web.Controllers
             {
                 try
                 {
-                    _context.Update(@property);
+                    _context.Update(review);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!PropertyExists(@property.ID))
+                    if (!ReviewExists(review.ID))
                     {
                         return NotFound();
                     }
@@ -119,10 +113,10 @@ namespace web.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(@property);
+            return View(review);
         }
 
-        // GET: Property/Delete/5
+        // GET: Review/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -130,34 +124,34 @@ namespace web.Controllers
                 return NotFound();
             }
 
-            var @property = await _context.Properties
+            var review = await _context.Review
                 .FirstOrDefaultAsync(m => m.ID == id);
-            if (@property == null)
+            if (review == null)
             {
                 return NotFound();
             }
 
-            return View(@property);
+            return View(review);
         }
 
-        // POST: Property/Delete/5
+        // POST: Review/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var @property = await _context.Properties.FindAsync(id);
-            if (@property != null)
+            var review = await _context.Review.FindAsync(id);
+            if (review != null)
             {
-                _context.Properties.Remove(@property);
+                _context.Review.Remove(review);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool PropertyExists(int id)
+        private bool ReviewExists(int id)
         {
-            return _context.Properties.Any(e => e.ID == id);
+            return _context.Review.Any(e => e.ID == id);
         }
     }
 }

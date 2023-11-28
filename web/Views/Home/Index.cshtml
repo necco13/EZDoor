@@ -1,8 +1,64 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f9f9f9;
+            color: #333;
+        }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
-</div>
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        h1 {
+            color: #3498db;
+        }
+
+        h2 {
+            color: #2c3e50;
+        }
+
+        p {
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .cta-button {
+            display: inline-block;
+            padding: 10px 20px;
+            margin-top: 20px;
+            background-color: #3498db;
+            color: #ecf0f1;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .cta-button:hover {
+            background-color: #2980b9;
+        }
+    </style>
+    <section>
+        <h2>Welcome to EZDoor</h2>
+        <p>Unlock a new level of convenience with EZDoor's smart door handles. Experience a seamless booking experience tailored just for you. Whether you're staying at a hotel, visiting an office, or accessing any EZDoor-enabled space, we've designed the perfect solution for your needs.</p>
+
+        <h2>Key Features:</h2>
+        <ul>
+            <li>Effortless Access: No more fumbling for keys or key cards. EZDoor handles provide a touch-free and secure entry experience.</li>
+            <li>Personalized Bookings: Easily manage and customize your bookings through our user-friendly interface.</li>
+            <li>Secure and Reliable: Rest easy knowing that EZDoor prioritizes your safety with state-of-the-art security features.</li>
+        </ul>
+
+        <h2>Ready to Experience EZDoor?</h2>
+        <p>Join the revolution in access control. Elevate your booking experience with EZDoor today!</p>
+        
+        <a href="/Identity/Account/Login">Log in to get started!</a>
+    </section>

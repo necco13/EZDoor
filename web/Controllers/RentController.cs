@@ -8,29 +8,27 @@ using Microsoft.EntityFrameworkCore;
 using web.Data;
 using web.Models;
 using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNetCore.Identity;
+
 
 namespace web.Controllers
 {
     [Authorize]
-    public class PropertyController : Controller
+    public class RentController : Controller
     {
         private readonly EZdb _context;
-        private readonly UserManager<User> _landlord;
 
-        public PropertyController(EZdb context, UserManager<User> landlord)
+        public RentController(EZdb context)
         {
-            _landlord = landlord;
             _context = context;
         }
 
-        // GET: Property
+        // GET: Rent
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Properties.ToListAsync());
+            return View(await _context.Rent.ToListAsync());
         }
 
-        // GET: Property/Details/5
+        // GET: Rent/Details/5
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)
@@ -38,40 +36,39 @@ namespace web.Controllers
                 return NotFound();
             }
 
-            var @property = await _context.Properties
+            var rent = await _context.Rent
                 .FirstOrDefaultAsync(m => m.ID == id);
-            if (@property == null)
+            if (rent == null)
             {
                 return NotFound();
             }
 
-            return View(@property);
+            return View(rent);
         }
 
-        // GET: Property/Create
+        // GET: Rent/Create
         public IActionResult Create()
         {
             return View();
         }
 
-        // POST: Property/Create
+        // POST: Rent/Create
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Name,Address,Notes")] Property @property)
+        public async Task<IActionResult> Create([Bind("ID,Start,End")] Rent rent)
         {
-            var currentUser = await _landlord.GetUserAsync(User);
             if (ModelState.IsValid)
-            {
-                _context.Add(@property);
+            {       
+                _context.Add(rent);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-            return View(@property);
+            return View(rent);
         }
 
-        // GET: Property/Edit/5
+        // GET: Rent/Edit/5
         public async Task<IActionResult> Edit(int? id)
         {
             if (id == null)
@@ -79,22 +76,22 @@ namespace web.Controllers
                 return NotFound();
             }
 
-            var @property = await _context.Properties.FindAsync(id);
-            if (@property == null)
+            var rent = await _context.Rent.FindAsync(id);
+            if (rent == null)
             {
                 return NotFound();
             }
-            return View(@property);
+            return View(rent);
         }
 
-        // POST: Property/Edit/5
+        // POST: Rent/Edit/5
         // To protect from overposting attacks, enable the specific properties you want to bind to.
         // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Edit(int id, [Bind("ID,Name,Address,Notes")] Property @property)
+        public async Task<IActionResult> Edit(int id, [Bind("ID,Start,End")] Rent rent)
         {
-            if (id != @property.ID)
+            if (id != rent.ID)
             {
                 return NotFound();
             }
@@ -103,12 +100,12 @@ namespace web.Controllers
             {
                 try
                 {
-                    _context.Update(@property);
+                    _context.Update(rent);
                     await _context.SaveChangesAsync();
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!PropertyExists(@property.ID))
+                    if (!RentExists(rent.ID))
                     {
                         return NotFound();
                     }
@@ -119,10 +116,10 @@ namespace web.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
-            return View(@property);
+            return View(rent);
         }
 
-        // GET: Property/Delete/5
+        // GET: Rent/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
             if (id == null)
@@ -130,34 +127,34 @@ namespace web.Controllers
                 return NotFound();
             }
 
-            var @property = await _context.Properties
+            var rent = await _context.Rent
                 .FirstOrDefaultAsync(m => m.ID == id);
-            if (@property == null)
+            if (rent == null)
             {
                 return NotFound();
             }
 
-            return View(@property);
+            return View(rent);
         }
 
-        // POST: Property/Delete/5
+        // POST: Rent/Delete/5
         [HttpPost, ActionName("Delete")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            var @property = await _context.Properties.FindAsync(id);
-            if (@property != null)
+            var rent = await _context.Rent.FindAsync(id);
+            if (rent != null)
             {
-                _context.Properties.Remove(@property);
+                _context.Rent.Remove(rent);
             }
 
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
 
-        private bool PropertyExists(int id)
+        private bool RentExists(int id)
         {
-            return _context.Properties.Any(e => e.ID == id);
+            return _context.Rent.Any(e => e.ID == id);
         }
     }
 }
