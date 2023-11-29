@@ -1,7 +1,7 @@
 # EZDoor
 
 ## Avtorja:
-Martin Sedej \
+Martin Sedej 63220289\
 Nejc Narobe 63220231
 
 ## Opis:
