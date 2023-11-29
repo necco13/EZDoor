@@ -64,6 +64,7 @@ namespace web.Controllers
             var currentUser = await _landlord.GetUserAsync(User);
             //if (ModelState.IsValid)
             //{
+                property.Landlord = currentUser;
                 _context.Add(@property);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
