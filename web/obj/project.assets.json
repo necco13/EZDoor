@@ -8150,11 +8150,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Nejc\\Desktop\\Faks\\2. letnik\\EZDoor\\web\\web.csproj",
+      "projectUniqueName": "C:\\Users\\Nejc\\Desktop\\Faks\\EZdoor\\web\\web.csproj",
       "projectName": "web",
-      "projectPath": "C:\\Users\\Nejc\\Desktop\\Faks\\2. letnik\\EZDoor\\web\\web.csproj",
+      "projectPath": "C:\\Users\\Nejc\\Desktop\\Faks\\EZdoor\\web\\web.csproj",
       "packagesPath": "C:\\Users\\Nejc\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Nejc\\Desktop\\Faks\\2. letnik\\EZDoor\\web\\obj\\",
+      "outputPath": "C:\\Users\\Nejc\\Desktop\\Faks\\EZdoor\\web\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -8241,7 +8241,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

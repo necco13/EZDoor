@@ -25,6 +25,7 @@ namespace web.Controllers
         // GET: Rent
         public async Task<IActionResult> Index()
         {
+
             return View(await _context.Rent.ToListAsync());
         }
 
@@ -47,41 +48,30 @@ namespace web.Controllers
         }
 
         // GET: Rent/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
+public IActionResult Create()
+{
+    // Populate dropdown for Users
+    ViewBag.Users = new SelectList(_context.Users, "Id", "UserName");
+
+    // Populate dropdown for Properties
+    ViewBag.Properties = new SelectList(_context.Properties, "ID", "Name");
+
+    return View();
+}
 
         // POST: Rent/Create
-        // To protect from overposting attacks, enable the specific properties you want to bind to.
-        // For more details, see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("ID,Start,End")] Rent rent)
+        public async Task<IActionResult> Create([Bind("ID,Start,End,User,Property")] Rent rent)
         {
-            //if (ModelState.IsValid)
-            //{       
+            Property property = await _context.Properties.FindAsync(rent.Property.ID);
+            rent.Property = property;
+
+            User user = await _context.Users.FindAsync(rent.User.Id);
+            rent.User = user;
                 _context.Add(rent);
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
-            //}
-            return View(rent);
-        }
-
-        // GET: Rent/Edit/5
-        public async Task<IActionResult> Edit(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var rent = await _context.Rent.FindAsync(id);
-            if (rent == null)
-            {
-                return NotFound();
-            }
-            return View(rent);
         }
 
         // POST: Rent/Edit/5

@@ -4,26 +4,45 @@
     ViewData["Title"] = "Create";
 }
 
-<h1>Create</h1>
-
-<h4>Rent</h4>
+<h1>Create Rent</h1>
 <hr />
+
 <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6">
         <form asp-action="Create">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
             <div class="form-group">
-                <label asp-for="Start" class="control-label"></label>
+                <label asp-for="Start" class="control-label">Start Date</label>
                 <input asp-for="Start" class="form-control" />
                 <span asp-validation-for="Start" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <label asp-for="End" class="control-label"></label>
+                <label asp-for="End" class="control-label">End Date</label>
                 <input asp-for="End" class="form-control" />
                 <span asp-validation-for="End" class="text-danger"></span>
             </div>
+
             <div class="form-group">
-                <input type="submit" value="Create" class="btn btn-primary" />
+                <label asp-for="User.Id" class="control-label">User</label>
+                <select asp-for="User.Id" asp-items="@(ViewBag.Users)" class="form-control">
+                    <option value="">Select User</option>
+                </select>
+                <span asp-validation-for="User.Id" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Property.ID" class="control-label">Property</label>
+                <select asp-for="Property.ID" asp-items="@(ViewBag.Properties)" class="form-control">
+                    <option value="">Select Property</option>
+                </select>
+                <span asp-validation-for="Property.ID" class="text-danger"></span>
+            </div>
+
+
+            <div class="form-group">
+                <button type="submit" class="btn btn-primary">Create</button>
             </div>
         </form>
     </div>
@@ -32,4 +51,3 @@
 <div>
     <a asp-action="Index">Back to List</a>
 </div>
-

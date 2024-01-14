@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "3v2md7zNJo0oLLm/g24uCGDYKTari27Z6kPQDJhr1D53Bhe2v0wD4tEkMtaQ6aDad8L56XpnIFEBD/uEaeDBZA==",
+  "dgSpecHash": "mvmedvIsXqT5+OVmW8f1LXVw8Ucjtuo6oBMFGOA+poN1NwDqSNezoi50ABzSq1Cv3iSxJs8bLbWW+vlZYi6Fiw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nejc\\Desktop\\Faks\\2. letnik\\EZDoor\\web\\web.csproj",
+  "projectFilePath": "C:\\Users\\Nejc\\Desktop\\Faks\\EZdoor\\web\\web.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Nejc\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Nejc\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
