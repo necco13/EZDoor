@@ -15,11 +15,11 @@ namespace web.Controllers
     [Authorize]
     public class UserController : Controller
     {
-        private readonly EZdb _context;
+        private readonly Azuredb _context;
 
         private readonly UserManager<User> _usermanager;
 
-        public UserController(EZdb context, UserManager<User> userManager )
+        public UserController(Azuredb context, UserManager<User> userManager )
         {
             _context = context;
             _usermanager = userManager;

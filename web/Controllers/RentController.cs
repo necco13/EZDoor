@@ -15,9 +15,9 @@ namespace web.Controllers
     [Authorize]
     public class RentController : Controller
     {
-        private readonly EZdb _context;
+        private readonly Azuredb _context;
 
-        public RentController(EZdb context)
+        public RentController(Azuredb context)
         {
             _context = context;
         }

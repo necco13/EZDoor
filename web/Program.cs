@@ -12,12 +12,12 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
-var connectionString = builder.Configuration.GetConnectionString("EZdb");
-builder.Services.AddDbContext<EZdb>(options =>
-    options.UseSqlServer(builder.Configuration.GetConnectionString("EZdb")));
+var connectionString = builder.Configuration.GetConnectionString("Azuredb");
+builder.Services.AddDbContext<Azuredb>(options =>
+    options.UseSqlServer(builder.Configuration.GetConnectionString("Azuredb")));
 builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfirmedAccount = false)
     .AddRoles<IdentityRole>()
-    .AddEntityFrameworkStores<EZdb>();
+    .AddEntityFrameworkStores<Azuredb>();
 
 
 var app = builder.Build();

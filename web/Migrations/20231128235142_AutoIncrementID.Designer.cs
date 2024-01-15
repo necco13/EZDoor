@@ -11,7 +11,7 @@ using web.Data;
 
 namespace web.Migrations
 {
-    [DbContext(typeof(EZdb))]
+    [DbContext(typeof(Azuredb))]
     [Migration("20231128235142_AutoIncrementID")]
     partial class AutoIncrementID
     {

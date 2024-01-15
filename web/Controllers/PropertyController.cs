@@ -15,10 +15,10 @@ namespace web.Controllers
     [Authorize]
     public class PropertyController : Controller
     {
-        private readonly EZdb _context;
+        private readonly Azuredb _context;
         private readonly UserManager<User> _landlord;
 
-        public PropertyController(EZdb context, UserManager<User> landlord)
+        public PropertyController(Azuredb context, UserManager<User> landlord)
         {
             _landlord = landlord;
             _context = context;

@@ -4,9 +4,9 @@ using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 namespace web.Data
 {
-    public class EZdb : IdentityDbContext<User>
+    public class Azuredb : IdentityDbContext<User>
     {
-        public EZdb(DbContextOptions<EZdb> options) : base(options)
+        public Azuredb(DbContextOptions<Azuredb> options) : base(options)
         {
         }
 

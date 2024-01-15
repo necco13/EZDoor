@@ -10,8 +10,8 @@ using web.Data;
 
 namespace web.Migrations
 {
-    [DbContext(typeof(EZdb))]
-    partial class EZdbModelSnapshot : ModelSnapshot
+    [DbContext(typeof(Azuredb))]
+    partial class AzuredbModelSnapshot : ModelSnapshot
     {
         protected override void BuildModel(ModelBuilder modelBuilder)
         {

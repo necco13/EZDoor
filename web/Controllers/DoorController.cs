@@ -12,9 +12,9 @@ namespace web.Controllers
 {
     public class DoorController : Controller
     {
-        private readonly EZdb _context;
+        private readonly Azuredb _context;
 
-        public DoorController(EZdb context)
+        public DoorController(Azuredb context)
         {
             _context = context;
         }

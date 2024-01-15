@@ -12,9 +12,9 @@ namespace web.Controllers
 {
     public class ReviewController : Controller
     {
-        private readonly EZdb _context;
+        private readonly Azuredb _context;
 
-        public ReviewController(EZdb context)
+        public ReviewController(Azuredb context)
         {
             _context = context;
         }
