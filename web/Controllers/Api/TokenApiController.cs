@@ -39,7 +39,10 @@ namespace web.Controllers_Api
         [HttpGet("{id}")]
         public string GetToken(int id)
         {
-            return JsonConvert.SerializeObject(new Veljavnost(currentToken));
+            if(id == currentToken.GetCifra())
+                return JsonConvert.SerializeObject(new Veljavnost(currentToken));
+            else
+                return JsonConvert.SerializeObject(new Veljavnost());
         }
 
     }
