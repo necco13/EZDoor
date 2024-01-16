@@ -9,6 +9,7 @@ using web.Data;
 using web.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
+using Microsoft.Extensions.Configuration.UserSecrets;
 
 namespace web.Controllers
 {
@@ -27,7 +28,11 @@ namespace web.Controllers
         // GET: Property
         public async Task<IActionResult> Index()
         {
-            return View(await _context.Properties.ToListAsync());
+            var currentUser = await _landlord.GetUserAsync(User);
+            if(_context.UserRoles.Where(ur => ur.UserId == currentUser.Id && ur.RoleId == "0").Any()){
+                return View(await _context.Properties.ToListAsync());//admin loh dela kr hoce
+            }
+            return View(await _context.Properties.Where(p => p.Landlord == currentUser).ToListAsync());
         }
 
         // GET: Property/Details/5

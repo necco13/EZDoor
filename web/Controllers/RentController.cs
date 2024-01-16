@@ -8,6 +8,7 @@ using Microsoft.EntityFrameworkCore;
 using web.Data;
 using web.Models;
 using Microsoft.AspNetCore.Authorization;
+using System.Security.Claims;
 
 
 namespace web.Controllers
@@ -25,7 +26,7 @@ namespace web.Controllers
         // GET: Rent
         public async Task<IActionResult> Index()
         {
-
+            
             return View(await _context.Rent.ToListAsync());
         }
 
