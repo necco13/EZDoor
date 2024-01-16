@@ -22,8 +22,10 @@ namespace web.Data
             modelBuilder.Entity<Rent>().ToTable("Rent");
             modelBuilder.Entity<Review>().ToTable("Review");
             modelBuilder.Entity<User>().ToTable("User");
+            modelBuilder.Entity<Token>().ToTable("Token");
             base.OnModelCreating(modelBuilder);
         }
+        public DbSet<web.Models.Token> Token { get; set; } = default!;
     }
     
 }
