@@ -42,34 +42,5 @@ namespace web.Controllers_Api
             return JsonConvert.SerializeObject(new Veljavnost(currentToken));
         }
 
-        // PUT: api/TokenApi/5
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-
-        // POST: api/TokenApi
-        // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
-        [HttpPost]
-        public async Task<ActionResult<Token>> PostToken(Token token)
-        {
-            _context.Token.Add(token);
-            await _context.SaveChangesAsync();
-
-            return CreatedAtAction("GetToken", new { id = currentToken.GetCifra() }, token);
-        }
-
-        // DELETE: api/TokenApi/5
-        [HttpDelete("{id}")]
-        public async Task<IActionResult> DeleteToken(int id)
-        {
-            var token = await _context.Token.FindAsync(id);
-            if (token == null)
-            {
-                return NotFound();
-            }
-
-            _context.Token.Remove(token);
-            await _context.SaveChangesAsync();
-
-            return NoContent();
-        }
     }
 }
