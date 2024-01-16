@@ -8,6 +8,7 @@
     ".NETCoreApp,Version=v8.0": {
       "web/1.0.0": {
         "dependencies": {
+          "Json.Net": "1.0.33",
           "Microsoft.AspNetCore.Diagnostics.EntityFrameworkCore": "8.0.0-rc.2.23480.2",
           "Microsoft.AspNetCore.Identity.EntityFrameworkCore": "8.0.0-rc.2.23480.2",
           "Microsoft.AspNetCore.Identity.UI": "8.0.0-rc.2.23480.2",
@@ -591,6 +592,14 @@
         "resources": {
           "lib/net6.0/zh-Hant/Humanizer.resources.dll": {
             "locale": "zh-Hant"
+          }
+        }
+      },
+      "Json.Net/1.0.33": {
+        "runtime": {
+          "lib/netstandard2.0/Json.Net.dll": {
+            "assemblyVersion": "1.0.33.1",
+            "fileVersion": "1.0.33.1"
           }
         }
       },
@@ -2298,6 +2307,13 @@
       "sha512": "sha512-VIXB7HCUC34OoaGnO3HJVtSv2/wljPhjV7eKH4+TFPgQdJj2lvHNKY41Dtg0Bphu7X5UaXFR4zrYYyo+GNOjbA==",
       "path": "humanizer.core.zh-hant/2.14.1",
       "hashPath": "humanizer.core.zh-hant.2.14.1.nupkg.sha512"
+    },
+    "Json.Net/1.0.33": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-5tE+db6BqhRAvITIVBeRsQorLGshPExfm4FmMRvWWAfs4RxeTbFFj2PIEybwmMW0qR30HKkXDYhq0YkDK2Jtxw==",
+      "path": "json.net/1.0.33",
+      "hashPath": "json.net.1.0.33.nupkg.sha512"
     },
     "Microsoft.AspNetCore.Cryptography.Internal/8.0.0-rc.2.23480.2": {
       "type": "package",

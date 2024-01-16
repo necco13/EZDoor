@@ -19,7 +19,6 @@ builder.Services.AddDefaultIdentity<User>(options => options.SignIn.RequireConfi
     .AddRoles<IdentityRole>()
     .AddEntityFrameworkStores<Azuredb>();
 
-
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
