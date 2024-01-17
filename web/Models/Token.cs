@@ -45,6 +45,9 @@ public class CifraCas {
 }
 public class Veljavnost {
     public bool veljavnost;
+    public Veljavnost(){    //dodano ce se tokena ne ujemata
+        this.veljavnost = false;
+    }
     public Veljavnost(Token x){
         this.veljavnost = x.IsValid();
     }

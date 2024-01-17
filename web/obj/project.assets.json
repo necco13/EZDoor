@@ -1,6 +1,7 @@
 {
   "version": 3,
   "targets": {
+<<<<<<< HEAD
     "net8.0": {
       "Azure.Core/1.25.0": {
         "type": "package",
@@ -8408,7 +8409,11 @@
         "useSharedDesignerContext.txt"
       ]
     }
+=======
+    "net8.0": {}
+>>>>>>> a6a4fd0d0b8eb8a0e2341994aedcc23ae42f67ba
   },
+  "libraries": {},
   "projectFileDependencyGroups": {
     "net8.0": [
       "Json.Net >= 1.0.33",
@@ -8423,24 +8428,33 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\marti\\.nuget\\packages\\": {}
+    "C:\\Users\\Nejc\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\marti\\Documents\\GitHub\\EZDoor\\web\\web.csproj",
+      "projectUniqueName": "C:\\Users\\Nejc\\Desktop\\Faks\\EZdoor\\web\\web.csproj",
       "projectName": "web",
-      "projectPath": "C:\\Users\\marti\\Documents\\GitHub\\EZDoor\\web\\web.csproj",
-      "packagesPath": "C:\\Users\\marti\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\marti\\Documents\\GitHub\\EZDoor\\web\\obj\\",
+      "projectPath": "C:\\Users\\Nejc\\Desktop\\Faks\\EZdoor\\web\\web.csproj",
+      "packagesPath": "C:\\Users\\Nejc\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Nejc\\Desktop\\Faks\\EZdoor\\web\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-        "C:\\Users\\marti\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\Nejc\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
+        "C:\\Users\\Nejc\\Desktop\\Realis\\NuGets": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -8519,8 +8533,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.100/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101/PortableRuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Users\\Nejc\\Desktop\\Realis\\NuGets' doesn't exist.",
+      "libraryId": "Json.Net"
+    }
+  ]
 }

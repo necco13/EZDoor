@@ -1,5 +1,6 @@
 {
   "version": 2,
+<<<<<<< HEAD
   "dgSpecHash": "y7NlfG2XvtlZhb7NwFWWiOKgrmTZI3UeNdhP3wvxz3QwhJSC2pAAeCdI/3betaPSNuyNCIwLyUJRW4bFMPYTfg==",
   "success": true,
   "projectFilePath": "C:\\Users\\marti\\Documents\\GitHub\\EZDoor\\web\\web.csproj",
@@ -178,4 +179,18 @@
     "C:\\Users\\marti\\.nuget\\packages\\system.windows.extensions\\7.0.0\\system.windows.extensions.7.0.0.nupkg.sha512"
   ],
   "logs": []
+=======
+  "dgSpecHash": "XG3QGBaj0oBXVhfXd0WX6k7p48jzjYIY6oOVbSLYhdh3zrnV390S5GjPZIBwJeT5Jx1Q7N7Pkp5jj0sr8e2SnA==",
+  "success": false,
+  "projectFilePath": "C:\\Users\\Nejc\\Desktop\\Faks\\EZdoor\\web\\web.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "NU1301",
+      "level": "Error",
+      "message": "The local source 'C:\\Users\\Nejc\\Desktop\\Realis\\NuGets' doesn't exist.",
+      "libraryId": "Json.Net"
+    }
+  ]
+>>>>>>> a6a4fd0d0b8eb8a0e2341994aedcc23ae42f67ba
 }
