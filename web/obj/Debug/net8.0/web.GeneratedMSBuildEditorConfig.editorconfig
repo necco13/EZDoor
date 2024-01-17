@@ -9,175 +9,175 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = web
 build_property.RootNamespace = web
-build_property.ProjectDir = C:\Users\Nejc\Desktop\Faks\EZdoor\web\
+build_property.ProjectDir = C:\Users\marti\Documents\GitHub\EZDoor\web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Nejc\Desktop\Faks\EZdoor\web
+build_property.MSBuildProjectDirectory = C:\Users\marti\Documents\GitHub\EZDoor\web
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Areas/Identity/Pages/Account/Login.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Areas/Identity/Pages/Account/Login.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Areas/Identity/Pages/Account/Logout.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Areas/Identity/Pages/Account/Logout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Areas/Identity/Pages/Account/Register.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Areas/Identity/Pages/Account/Register.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Areas/Identity/Pages/Account/RegisterConfirmation.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxSZWdpc3RlckNvbmZpcm1hdGlvbi5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Areas/Identity/Pages/Account/_ViewImports.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Areas/Identity/Pages/Account/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcQWNjb3VudFxfVmlld0ltcG9ydHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Areas/Identity/Pages/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZhbGlkYXRpb25TY3JpcHRzUGFydGlhbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Areas/Identity/Pages/_ViewImports.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Areas/Identity/Pages/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Areas/Identity/Pages/_ViewStart.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Areas/Identity/Pages/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = QXJlYXNcSWRlbnRpdHlcUGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Door/Create.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Door/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9vclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Door/Delete.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Door/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9vclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Door/Details.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Door/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9vclxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Door/Edit.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Door/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9vclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Door/Index.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Door/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcRG9vclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Home/About.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Home/About.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxBYm91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Home/Index.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Property/Create.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Property/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcQ3JlYXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Property/Delete.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Property/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcRGVsZXRlLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Property/Details.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Property/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcRGV0YWlscy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Property/Edit.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Property/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcRWRpdC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Property/Index.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Property/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUHJvcGVydHlcSW5kZXguY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Rent/Create.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Rent/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudFxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Rent/Delete.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Rent/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudFxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Rent/Details.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Rent/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudFxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Rent/Edit.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Rent/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudFxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Rent/Index.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Rent/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmVudFxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Review/Create.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Review/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3XENyZWF0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Review/Delete.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Review/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3XERlbGV0ZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Review/Details.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Review/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3XERldGFpbHMuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Review/Edit.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Review/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3XEVkaXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Review/Index.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Review/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcUmV2aWV3XEluZGV4LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Shared/Error.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Shared/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXEVycm9yLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Shared/_LoginPartial.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Shared/_LoginPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9Mb2dpblBhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Shared/_ValidationScriptsPartial.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Shared/_ValidationScriptsPartial.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/User/Create.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/User/Create.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxDcmVhdGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/User/Delete.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/User/Delete.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZWxldGUuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/User/Details.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/User/Details.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxEZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/User/Edit.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/User/Edit.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxFZGl0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/User/Index.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/User/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/_ViewImports.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/_ViewImports.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/_ViewStart.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/_ViewStart.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcX1ZpZXdTdGFydC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Nejc/Desktop/Faks/EZdoor/web/Views/Shared/_Layout.cshtml]
+[C:/Users/marti/Documents/GitHub/EZDoor/web/Views/Shared/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU2hhcmVkXF9MYXlvdXQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = b-vpkz4e1jaw
