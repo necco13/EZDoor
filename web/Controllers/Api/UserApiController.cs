@@ -40,7 +40,7 @@ namespace web.Controllers_Api
         // POST: api/UserApi
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<LoginUser> PostUser(LoginUser user)
+        public async Task<LoginUser> PostUser([FromBody]LoginUser user)
         {
             return user;
         }
