@@ -31,7 +31,7 @@ namespace web.Controllers_Api
         static Token currentToken = new Token();
 
         // GET: api/TokenApi
-        [HttpGet]
+        [HttpPost]
         public async Task<IActionResult> PostToken([FromBody]LoginUser user)
         {
             var hasher = new Microsoft.AspNetCore.Identity.PasswordHasher<User>();
@@ -43,10 +43,10 @@ namespace web.Controllers_Api
             else if(hasher.VerifyHashedPassword(us,us.PasswordHash,user.geslo) == PasswordVerificationResult.Success)
                 {
             if(currentToken.IsValid()){
-                Ok(JsonConvert.SerializeObject(new CifraCas(currentToken)));
+                return Ok(JsonConvert.SerializeObject(new CifraCas(currentToken)));
             }
             currentToken = new Token();
-            Ok(JsonConvert.SerializeObject(new CifraCas(currentToken)));
+            return Ok(JsonConvert.SerializeObject(new CifraCas(currentToken)));
                 }
             return Forbid();
         }
