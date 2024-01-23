@@ -26,7 +26,11 @@ namespace web.Controllers
         // GET: Rent
         public async Task<IActionResult> Index()
         {
-            
+            var userId =  User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if(_context.UserRoles.Where(r => r.UserId == userId && r.RoleId == "0").Any()){
+                return View(await _context.Rent.ToListAsync());//admin loh dela kr hoce
+            }
+            //return View(await _context.Rent.Where(r => r.UserId == userId).ToListAsync()); //vidi svoje rezervacije
             return View(await _context.Rent.ToListAsync());
         }
 
