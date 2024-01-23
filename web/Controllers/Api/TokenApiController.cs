@@ -27,7 +27,7 @@ namespace web.Controllers_Api
         static Token currentToken = new Token();
 
         // GET: api/TokenApi
-        [HttpPost]
+        [HttpGet]
         public async Task<IActionResult> PostToken([FromBody]LoginUser user)
         {
             var hasher = new Microsoft.AspNetCore.Identity.PasswordHasher<User>();
