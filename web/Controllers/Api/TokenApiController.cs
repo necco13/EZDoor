@@ -13,6 +13,10 @@ using Microsoft.AspNetCore.Identity;
 
 namespace web.Controllers_Api
 {
+    public class LoginUser{
+    public string ime{get;set;}
+    public string geslo{get;set;}
+}
     [Route("api/token")]
     [ApiController]
     public class TokenApiController : ControllerBase
