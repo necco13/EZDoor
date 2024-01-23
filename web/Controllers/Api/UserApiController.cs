@@ -45,7 +45,7 @@ namespace web.Controllers_Api
         public async Task<LoginUser> PostUser([FromBody]LoginUser user)
         {
            var hasher = new Microsoft.AspNetCore.Identity.PasswordHasher<User>();
-            User us = await _context.Users.Where(u => u.UserName = user.ime).ToListAsync();
+            User us = await _context.Users.FirstOrDefaultAsync(u => u.UserName == user.ime);
             if(us==null)
                 return new LoginUser();
             if(hasher.VerifyHashedPassword(us,us.PasswordHash,user.geslo) == PasswordVerificationResult.Failed)
