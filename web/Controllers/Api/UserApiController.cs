@@ -11,6 +11,8 @@ using web.Data;
 using web.Models;
 using Newtonsoft.Json;
 
+using Microsoft.AspNetCore.Identity;
+
 
 public class LoginUser{
     public string ime{get;set;}
@@ -42,6 +44,14 @@ namespace web.Controllers_Api
         [HttpPost]
         public async Task<LoginUser> PostUser([FromBody]LoginUser user)
         {
+           var hasher = new Microsoft.AspNetCore.Identity.PasswordHasher<User>();
+            User us = await _context.Users.Where(u => u.UserName = user.ime).ToListAsync();
+            if(us==null)
+                return new LoginUser();
+            if(hasher.VerifyHashedPassword(us,us.PasswordHash,user.geslo) == PasswordVerificationResult.Failed)
+                user.geslo = "narobe";
+            else if(hasher.VerifyHashedPassword(us,us.PasswordHash,user.geslo) == PasswordVerificationResult.Success)
+                user.geslo="pravilno";
             return user;
         }
     }
