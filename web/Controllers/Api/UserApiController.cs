@@ -13,8 +13,8 @@ using Newtonsoft.Json;
 
 
 public class LoginUser{
-    public string ime;
-    public string geslo;
+    string ime{get;set;}
+    string geslo{get;set;}
 }
 
 namespace web.Controllers_Api
