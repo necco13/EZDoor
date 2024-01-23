@@ -28,23 +28,23 @@ namespace web.Controllers_Api
 
         // GET: api/TokenApi
         [HttpPost]
-        public string GetToken([FromBody]LoginUser user)
+        public async Task<IActionResult> PostToken([FromBody]LoginUser user)
         {
             var hasher = new Microsoft.AspNetCore.Identity.PasswordHasher<User>();
-            User us = _context.Users.FirstOrDefaultAsync(u => u.UserName == user.ime);
+            User us = await _context.Users.FirstOrDefaultAsync(u => u.UserName == user.ime);
             if(us==null)
-                return "no no";
+                return Forbid();
             if(hasher.VerifyHashedPassword(us,us.PasswordHash,user.geslo) == PasswordVerificationResult.Failed)
-                return "no no";
+                return Forbid();
             else if(hasher.VerifyHashedPassword(us,us.PasswordHash,user.geslo) == PasswordVerificationResult.Success)
                 {
             if(currentToken.IsValid()){
-                return JsonConvert.SerializeObject(new CifraCas(currentToken));
+                Ok(JsonConvert.SerializeObject(new CifraCas(currentToken)));
             }
             currentToken = new Token();
-            return JsonConvert.SerializeObject(new CifraCas(currentToken));
+            Ok(JsonConvert.SerializeObject(new CifraCas(currentToken)));
                 }
-            return "no no";
+            return Forbid();
         }
 
         // GET: api/token/poljubna_cifra //veljavnost
