@@ -37,9 +37,9 @@ namespace web.Controllers_Api
             var hasher = new Microsoft.AspNetCore.Identity.PasswordHasher<User>();
             User us = await _context.Users.FirstOrDefaultAsync(u => u.UserName == user.ime);
             if(us==null)
-                return Forbid();
+                return Ok("{\"cifra\":0,\"cas\":-1}");
             if(hasher.VerifyHashedPassword(us,us.PasswordHash,user.geslo) == PasswordVerificationResult.Failed)
-                return Forbid();
+                return Ok("{\"cifra\":0,\"cas\":-1}");
             else if(hasher.VerifyHashedPassword(us,us.PasswordHash,user.geslo) == PasswordVerificationResult.Success)
                 {
             if(currentToken.IsValid()){
@@ -48,7 +48,7 @@ namespace web.Controllers_Api
             currentToken = new Token();
             return Ok(JsonConvert.SerializeObject(new CifraCas(currentToken)));
                 }
-            return Forbid();
+            return Ok("{\"cifra\":0,\"cas\":-1}");
         }
 
         // GET: api/token/poljubna_cifra //veljavnost
