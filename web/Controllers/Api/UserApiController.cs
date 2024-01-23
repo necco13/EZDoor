@@ -42,17 +42,17 @@ namespace web.Controllers_Api
         // POST: api/UserApi
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<LoginUser> PostUser([FromBody]LoginUser user)
+        public async Task<IActionResult> PostUser([FromBody]LoginUser user)
         {
            var hasher = new Microsoft.AspNetCore.Identity.PasswordHasher<User>();
             User us = await _context.Users.FirstOrDefaultAsync(u => u.UserName == user.ime);
             if(us==null)
-                return new LoginUser();
+                return Ok(null);
             if(hasher.VerifyHashedPassword(us,us.PasswordHash,user.geslo) == PasswordVerificationResult.Failed)
-                user.geslo = "narobe";
+                return Ok(null);
             else if(hasher.VerifyHashedPassword(us,us.PasswordHash,user.geslo) == PasswordVerificationResult.Success)
-                user.geslo="pravilno";
-            return user;
+                return Ok(user);
+            return Ok(null);
         }
     }
 }
