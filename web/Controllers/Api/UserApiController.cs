@@ -47,12 +47,12 @@ namespace web.Controllers_Api
            var hasher = new Microsoft.AspNetCore.Identity.PasswordHasher<User>();
             User us = await _context.Users.FirstOrDefaultAsync(u => u.UserName == user.ime);
             if(us==null)
-                return Ok(null);
+                return Ok(false);
             if(hasher.VerifyHashedPassword(us,us.PasswordHash,user.geslo) == PasswordVerificationResult.Failed)
-                return Ok(null);
+                return Ok(false);
             else if(hasher.VerifyHashedPassword(us,us.PasswordHash,user.geslo) == PasswordVerificationResult.Success)
-                return Ok(user);
-            return Ok(null);
+                return Ok(true);
+            return Ok(false);
         }
     }
 }
