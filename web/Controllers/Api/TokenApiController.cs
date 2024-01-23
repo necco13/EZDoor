@@ -9,6 +9,8 @@ using web.Data;
 using web.Models;
 using Newtonsoft.Json;
 
+using Microsoft.AspNetCore.Identity;
+
 namespace web.Controllers_Api
 {
     [Route("api/token")]
@@ -25,14 +27,24 @@ namespace web.Controllers_Api
         static Token currentToken = new Token();
 
         // GET: api/TokenApi
-        [HttpGet]
-        public string GetToken()
+        [HttpPost]
+        public string GetToken([FromBody]LoginUser user)
         {
+            var hasher = new Microsoft.AspNetCore.Identity.PasswordHasher<User>();
+            User us = _context.Users.FirstOrDefaultAsync(u => u.UserName == user.ime);
+            if(us==null)
+                return "no no";
+            if(hasher.VerifyHashedPassword(us,us.PasswordHash,user.geslo) == PasswordVerificationResult.Failed)
+                return "no no";
+            else if(hasher.VerifyHashedPassword(us,us.PasswordHash,user.geslo) == PasswordVerificationResult.Success)
+                {
             if(currentToken.IsValid()){
                 return JsonConvert.SerializeObject(new CifraCas(currentToken));
             }
             currentToken = new Token();
             return JsonConvert.SerializeObject(new CifraCas(currentToken));
+                }
+            return "no no";
         }
 
         // GET: api/token/poljubna_cifra //veljavnost
