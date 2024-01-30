@@ -11,10 +11,12 @@ using web.Data;
 using web.Models;
 using Newtonsoft.Json;
 
+using Microsoft.AspNetCore.Identity;
+
 
 public class LoginUser{
-    public string ime;
-    public string geslo;
+    public string ime{get;set;}
+    public string geslo{get;set;}
 }
 
 namespace web.Controllers_Api
@@ -40,9 +42,17 @@ namespace web.Controllers_Api
         // POST: api/UserApi
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<IActionResult> PostUser(LoginUser user)
+        public async Task<IActionResult> PostUser([FromBody]LoginUser user)
         {
-            return Ok();
+           var hasher = new Microsoft.AspNetCore.Identity.PasswordHasher<User>();
+            User us = await _context.Users.FirstOrDefaultAsync(u => u.UserName == user.ime);
+            if(us==null)
+                return Ok(false);
+            if(hasher.VerifyHashedPassword(us,us.PasswordHash,user.geslo) == PasswordVerificationResult.Failed)
+                return Ok(false);
+            else if(hasher.VerifyHashedPassword(us,us.PasswordHash,user.geslo) == PasswordVerificationResult.Success)
+                return Ok(true);
+            return Ok(false);
         }
     }
 }

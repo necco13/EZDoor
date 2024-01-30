@@ -1,7 +1,7 @@
 # EZDoor
 
 ## Avtorja:
-Martin Sedej 63220289
+Martin Sedej 63220289 \
 Nejc Narobe 63220231
 
 ## Opis:
@@ -28,3 +28,5 @@ poročilo in izvorna koda - oba
 
 ## Slika podatkovnega modela
 ![slika podat. modela](image-5.png)
+## Github do esp32 kode:
+https://github.com/necco13/EZdoorHandle
