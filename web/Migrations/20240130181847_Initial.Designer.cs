@@ -12,7 +12,7 @@ using web.Data;
 namespace web.Migrations
 {
     [DbContext(typeof(Azuredb))]
-    [Migration("20240115233524_Initial")]
+    [Migration("20240130181847_Initial")]
     partial class Initial
     {
         /// <inheritdoc />
