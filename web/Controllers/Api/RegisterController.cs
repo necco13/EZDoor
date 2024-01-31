@@ -23,10 +23,12 @@ namespace web.Controllers_Api
     public class RegisterController : ControllerBase
     {
         private readonly Azuredb _context;
+        private readonly UserManager<User> _usermanager;
 
-        public RegisterController(Azuredb context)
+        public RegisterController(Azuredb context,UserManager<User> userManager)
         {
             _context = context;
+            _usermanager = userManager;
         }
 
         // POST: api/UserApi
@@ -40,13 +42,10 @@ namespace web.Controllers_Api
            var userStore = new UserStore<User>(_context);
            if(userStore==null)
                 return Ok("Store");
-            var userManager = new UserManager<User>(userStore, null, null, null, null, null, null, null, null);
-            if(userManager==null)
-                return Ok("Manager");
             var user = new User { UserName = newUser.ime, Email = newUser.ime };
             if(user==null)
                 return Ok("user");
-            var result = await userManager.CreateAsync(user, newUser.geslo);
+            var result = await _usermanager.CreateAsync(user, newUser.geslo);
             if(result==null)
                 return Ok("result");
             return Ok(result.ToString());
