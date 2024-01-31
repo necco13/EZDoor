@@ -40,9 +40,7 @@ namespace web.Controllers_Api
             var user = new User { UserName = newUser.ime, Email = newUser.ime };
             var result = await userManager.CreateAsync(user, newUser.geslo);
 
-            if (result.Succeeded)
-                return Ok();
-            return Forbid();
+            return Ok(result.ToString());
         }
     }
     
