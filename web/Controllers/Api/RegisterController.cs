@@ -12,6 +12,7 @@ using web.Models;
 using Newtonsoft.Json;
 
 using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 
 
 
@@ -31,17 +32,17 @@ namespace web.Controllers_Api
         // POST: api/UserApi
         // To protect from overposting attacks, see https://go.microsoft.com/fwlink/?linkid=2123754
         [HttpPost]
-        public async Task<IActionResult> PostUser([FromBody]User newUser)
+        public async Task<IActionResult> PostUser([FromBody]LoginUser newUser)
         {
            var hasher = new Microsoft.AspNetCore.Identity.PasswordHasher<User>();
-            newUser.PasswordHash = hasher.HashPassword(newUser,newUser.PasswordHash);
-            try{
-                _context.Users.Add(newUser);
-                await _context.SaveChangesAsync();
-            }catch{
-                return Forbid();
-            }
-            return Ok();
+           var userStore = new UserStore<User>(_context);
+            var userManager = new UserManager<User>(userStore, null, null, null, null, null, null, null, null);
+            var user = new User { UserName = newUser.ime, Email = newUser.ime };
+            var result = await userManager.CreateAsync(user, newUser.geslo);
+
+            if (result.Succeeded)
+                return Ok();
+            return Forbid();
         }
     }
     
