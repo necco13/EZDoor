@@ -54,4 +54,4 @@ jobs:
           app-name: 'ezdoor'
           slot-name: 'Production'
           package: .
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_28D0EE716EDF4188B98E582FB0F0AFC3 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_3A70766ABC0B4D53B18E9C1689EEC7E5 }}
