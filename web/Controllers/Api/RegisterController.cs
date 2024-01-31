@@ -48,6 +48,7 @@ namespace web.Controllers_Api
             if(result==null)
                 return Ok("result");
             return Ok(result.ToString());
+            
            }catch(Exception ex){
             return Ok(ex.Message);
            }
