@@ -35,6 +35,8 @@ namespace web.Controllers_Api
         public async Task<IActionResult> PostUser([FromBody]LoginUser newUser)
         {
            try{
+            if(_context==null)
+                return Ok("context");
            var userStore = new UserStore<User>(_context);
            if(userStore==null)
                 return Ok("Store");
@@ -48,7 +50,7 @@ namespace web.Controllers_Api
             if(result==null)
                 return Ok("result");
             return Ok(result.ToString());
-            
+
            }catch(Exception ex){
             return Ok(ex.Message);
            }
