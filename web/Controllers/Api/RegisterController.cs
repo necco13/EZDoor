@@ -35,12 +35,15 @@ namespace web.Controllers_Api
         public async Task<IActionResult> PostUser([FromBody]LoginUser newUser)
         {
            var hasher = new Microsoft.AspNetCore.Identity.PasswordHasher<User>();
+           try{
            var userStore = new UserStore<User>(_context);
             var userManager = new UserManager<User>(userStore, null, null, null, null, null, null, null, null);
             var user = new User { UserName = newUser.ime, Email = newUser.ime };
             var result = await userManager.CreateAsync(user, newUser.geslo);
-
             return Ok(result.ToString());
+           }catch(Exception ex){
+            return Ok(ex.Message);
+           }
         }
     }
     
