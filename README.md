@@ -21,6 +21,9 @@ https://github.com/necco13/EZDoorApp
 ![slika vpisne strani](image-4.png)
 ![prikaz kode ter preostalega casa](image-3.png)
 
+## Demonstracija
+https://github.com/necco13/EZDoor/assets/42417423/58f55762-dc9f-4f54-a411-62a092b931ba
+
 ## Slika podatkovnega modela
 ![slika podat. modela](image-5.png)
 
