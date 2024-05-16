@@ -21,9 +21,6 @@ https://github.com/necco13/EZDoorApp
 ![slika vpisne strani](image-4.png)
 ![prikaz kode ter preostalega casa](image-3.png)
 
-## Kratek opis delovanja celotnega sistema
-Na domači strani lahko dostopamo do menija za vpis oz registracijo. Ko naredimo račun lahko naredimo ali najem ali pa vnos naše nepremičnine, ki jo želimo oddajati. Urejamo in odstranjujemo lahko le naše nepremičnine oz najeme (razen če smo skrbnik).
-
 ## Slika podatkovnega modela
 ![slika podat. modela](image-5.png)
 
