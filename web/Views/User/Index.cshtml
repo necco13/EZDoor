@@ -42,8 +42,6 @@
 <h1>Users</h1>
 @if (isAdmin)
 {
-
-        <button type="button" class="button"><a class="button" href="/User/Create">Create New</a></button>
     <table class="table" id="users">
         <thead>
             <tr>
@@ -81,6 +79,7 @@
             }
         </tbody>
     </table>
+    <button type="button" class="button"><a class="button" href="/User/Create">Create New</a></button>
 }
 else
 {
