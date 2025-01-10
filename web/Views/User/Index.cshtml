@@ -4,6 +4,7 @@
 @{
     ViewData["Title"] = "Index";
     bool isAdmin = (bool)ViewData["IsAdmin"];
+    var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
 }
 
 <style>
@@ -43,7 +44,7 @@
 {
 
         <button type="button" class="button"><a class="button" href="/User/Create">Create New</a></button>
-    <table class="table">
+    <table class="table" id="users">
         <thead>
             <tr>
                 <th>
@@ -84,6 +85,6 @@
 else
 {
     <script>
-        window.location.href = '@Url.Action("Details", "User", new { id = User.FindFirstValue("sub") })';
+         window.location.href = '@Url.Action("Details", "User", new { id = userId })';
     </script>
 }
