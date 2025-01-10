@@ -6,12 +6,48 @@
     bool isAdmin = (bool)ViewData["IsAdmin"];
 }
 
+<<<<<<< HEAD
 <h1>Index</h1>
 @if (isAdmin){
 <p>
     <a asp-action="Create">Create New</a>
 </p>
 <table class="table">
+=======
+<h1>Users</h1>
+
+<style>
+    .button {
+        text-decoration: none;
+        color: black;
+        border-radius: 4px;
+    }
+    #users {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    #users td, #users th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #users tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #users tr:hover {background-color: #ddd;}
+    
+    #users th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #87CEEB;
+      color: white;
+    }
+</style>
+
+<table class="table" id="users">
+>>>>>>> 30189410f2f30b9a082a810ae0d7da59091e4d08
     <thead>
         <tr>
             <th>
@@ -47,6 +83,7 @@
 }
     </tbody>
 </table>
+<<<<<<< HEAD
 }
 else
 {
@@ -54,3 +91,6 @@ else
         window.location.href = '@Url.Action("Details", "User", new { id = User.FindFirstValue("sub") })';
     </script>
 }
+=======
+<button type="button" class="button"><a class="button" href="/User/Create">Create New</a></button>
+>>>>>>> 30189410f2f30b9a082a810ae0d7da59091e4d08
