@@ -9,6 +9,51 @@
     <link rel="stylesheet" href="~/web.styles.css" asp-append-version="true" />
 </head>
 <body>
+    <style>
+        .navbar {
+            background: linear-gradient(90deg, #007bff, #00b4d8); 
+            color: #fff;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+        }
+        
+        .navbar-brand {
+            font-size: 1.5rem;
+            font-weight: bold;
+            color: #fff !important; 
+            text-transform: uppercase;
+        }
+        
+        .nav-link {
+            color: #fff; 
+            margin-right: 15px;
+            transition: color 0.3s ease; 
+        }
+        
+        .nav-link:hover {
+            color: #B0C4DE; 
+        }
+        
+        #manage, #logout {
+            color: #fff; 
+            font-weight: 500;
+            margin-right: 15px; 
+            text-decoration: none; 
+            transition: color 0.3s ease;
+        }
+        
+        #manage:hover {
+            color: #B0C4DE; 
+        }
+        
+        #logout:hover {
+            color: #FF3333;
+        }
+        
+        a, li {
+            color: white;
+        }
+    
+    </style>
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
@@ -20,22 +65,22 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link" id="manage" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="About">About us</a>
+                            <a class="nav-link" id="manage" asp-area="" asp-controller="Home" asp-action="About">About us</a>
                         </li>
                         @if (User.Identity.IsAuthenticated){
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Property" asp-action="Index">Property</a>
+                                <a class="nav-link" id="manage" asp-area="" asp-controller="Property" asp-action="Index">Property</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="Rent" asp-action="Index">Rents</a>
+                                <a class="nav-link" id="manage" asp-area="" asp-controller="Rent" asp-action="Index">Rents</a>
                             </li>
                             
                             
                             <li class="nav-item">
-                                <a class="nav-link text-dark" asp-area="" asp-controller="User" asp-action="Index">Users</a>
+                                <a class="nav-link" id="manage" asp-area="" asp-controller="User" asp-action="Index">Users</a>
                             </li>
                         }
                     </ul>
@@ -52,7 +97,7 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2023 - EZDoor - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2025 - EZDoor - 
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
