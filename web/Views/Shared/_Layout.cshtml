@@ -9,7 +9,8 @@
     <link rel="stylesheet" href="~/web.styles.css" asp-append-version="true" />
 </head>
 <body>
-    <style>
+    <header>
+        <style>
         .navbar {
             background: linear-gradient(90deg, #007bff, #00b4d8); 
             color: #fff;
@@ -33,7 +34,7 @@
             color: #B0C4DE; 
         }
         
-        #manage1, #logout {
+        #manage, #logout {
             color: #fff; 
             font-weight: 500;
             margin-right: 15px; 
@@ -41,7 +42,7 @@
             transition: color 0.3s ease;
         }
         
-        #manage1:hover {
+        #manage:hover {
             color: #B0C4DE; 
         }
         
@@ -49,7 +50,6 @@
             color: #FF3333;
         }
     </style>
-    <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
             <div class="container-fluid">
                 <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">EZDoor</a>
@@ -60,22 +60,22 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link" id="manage1" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
+                            <a class="nav-link" id="manage" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="manage1" asp-area="" asp-controller="Home" asp-action="About">About us</a>
+                            <a class="nav-link" id="manage" asp-area="" asp-controller="Home" asp-action="About">About us</a>
                         </li>
                         @if (User.Identity.IsAuthenticated){
                             <li class="nav-item">
-                                <a class="nav-link" id="manage1" asp-area="" asp-controller="Property" asp-action="Index">Property</a>
+                                <a class="nav-link" id="manage" asp-area="" asp-controller="Property" asp-action="Index">Property</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" id="manage1" asp-area="" asp-controller="Rent" asp-action="Index">Rents</a>
+                                <a class="nav-link" id="manage" asp-area="" asp-controller="Rent" asp-action="Index">Rents</a>
                             </li>
                             
                             
                             <li class="nav-item">
-                                <a class="nav-link" id="manage1" asp-area="" asp-controller="User" asp-action="Index">Users</a>
+                                <a class="nav-link" id="manage" asp-area="" asp-controller="User" asp-action="Index">Users</a>
                             </li>
                         }
                     </ul>
