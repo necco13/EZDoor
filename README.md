@@ -1,6 +1,6 @@
 # EZDoor
 
-## Avtorja:
+## Avtorji:
 Martin Sedej 63220289 \
 Nejc Narobe 63220231 \
 Tim Marinšek 63220455 \
@@ -10,11 +10,15 @@ Aljaž Škufca 63220316
 Aplikacija je namenjena uporabnikom bookinga za oddajanje stanovanj, ki uporabljajo pametno ključavnico. Aplikacija omogoča dodajanje termina za oddajo in dostop do naključno generiranih kratkotrajnih klučev zadostop do objektov.
 
 ## Uporabnika za testeranje:
+Za namen testiranja aplikacije lahko uporabite spodnje uporabnike ali pa kreirate svoje.
 ### Admin:
-Ime: ```admin@ezdoor.si```
+Ime: ```admin@ezdoor.si``` \
 Geslo: ```Geslo123!```
-### Navaden uporabnik:
-Ime: ```test@ezdoor.si```
+### Najemnik:
+Ime: ```najemnik@ezdoor.si``` \
+Geslo: ```Geslo123!```
+### Najemodajalec:
+Ime: ```najemodajalec@ezdoor.si``` \
 Geslo: ```Geslo123!```
 
 ## Github do esp32 kode:
@@ -37,9 +41,4 @@ https://github.com/necco13/EZDoor/assets/42417423/58f55762-dc9f-4f54-a411-62a092
 ## Slika podatkovnega modela
 ![slika podat. modela](image-5.png)
 
-## Opis nalog
-spletna aplikacija - oba \
-podatkovna baza - oba \
-spletna storitev - Martin Sedej \
-odjemalec Android - Nejc Narobe\
-poročilo in izvorna koda - oba
+
