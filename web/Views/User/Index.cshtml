@@ -1,11 +1,13 @@
+@using System.Security.Claims
 @model IEnumerable<web.Models.User>
 
 @{
     ViewData["Title"] = "Index";
+    bool isAdmin = (bool)ViewData["IsAdmin"];
 }
 
 <h1>Index</h1>
-
+@if (isAdmin){
 <p>
     <a asp-action="Create">Create New</a>
 </p>
@@ -45,3 +47,10 @@
 }
     </tbody>
 </table>
+}
+else
+{
+    <script>
+        window.location.href = '@Url.Action("Details", "User", new { id = User.FindFirstValue("sub") })';
+    </script>
+}

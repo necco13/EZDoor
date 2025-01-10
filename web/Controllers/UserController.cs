@@ -1,6 +1,7 @@
 using System;
 using System.Collections.Generic;
 using System.Linq;
+using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -28,6 +29,10 @@ namespace web.Controllers
         // GET: User
         public async Task<IActionResult> Index()
         {
+           var tmp = _context.UserRoles.Where(r => r.UserId == User.FindFirstValue(ClaimTypes.NameIdentifier)).Any();   
+
+           ViewData["IsAdmin"] = tmp;
+
             return View(await _context.Users.ToListAsync());
         }
 
@@ -161,5 +166,7 @@ namespace web.Controllers
         {
             return _context.Users.Any(e => e.Id == id);
         }
+
+
     }
 }

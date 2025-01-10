@@ -2,10 +2,20 @@
 
 ## Avtorja:
 Martin Sedej 63220289 \
-Nejc Narobe 63220231
+Nejc Narobe 63220231 \
+Tim Marinšek 63220455 \
+Aljaž Škufca 63220316
 
 ## Opis:
 Aplikacija je namenjena uporabnikom bookinga za oddajanje stanovanj, ki uporabljajo pametno ključavnico. Aplikacija omogoča dodajanje termina za oddajo in dostop do naključno generiranih kratkotrajnih klučev zadostop do objektov.
+
+## Uporabnika za testeranje:
+### Admin:
+Ime: ```admin@ezdoor.si```
+Geslo: ```Geslo123!```
+### Navaden uporabnik:
+Ime: ```test@ezdoor.si```
+Geslo: ```Geslo123!```
 
 ## Github do esp32 kode:
 https://github.com/necco13/EZdoorHandle
