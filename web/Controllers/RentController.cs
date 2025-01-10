@@ -30,7 +30,8 @@ namespace web.Controllers
             if(_context.UserRoles.Where(r => r.UserId == userId && r.RoleId == "0").Any()){
                 return View(await _context.Rent.ToListAsync());//admin loh dela kr hoce
             }
-            return View(await _context.Properties.Where(p => p.Landlord.Id == userId).ToListAsync());
+            return View(await _context.Rent.Where(r => r.Property.Landlord.Id == userId).ToListAsync());
+            // _context.Properties.Where(p => p.Landlord.Id == userId).ToListAsync()
         }
 
         // GET: Rent/Details/5
