@@ -4,12 +4,39 @@
     ViewData["Title"] = "Index";
 }
 
-<h1>Index</h1>
+<style>
+    .button {
+        text-decoration: none;
+        color: black;
+        border-radius: 4px;
+    }
+    #users {
+      font-family: Arial, Helvetica, sans-serif;
+      border-collapse: collapse;
+      width: 100%;
+    }
+    
+    #users td, #users th {
+      border: 1px solid #ddd;
+      padding: 8px;
+    }
+    
+    #users tr:nth-child(even){background-color: #f2f2f2;}
+    
+    #users tr:hover {background-color: #ddd;}
+    
+    #users th {
+      padding-top: 12px;
+      padding-bottom: 12px;
+      text-align: left;
+      background-color: #87CEEB;
+      color: white;
+    }
+</style>
 
-<p>
-    <a asp-action="Create">Create New</a>
-</p>
-<table class="table">
+<h1>Rents</h1>
+
+<table class="table" id="users">
     <thead>
         <tr>
             <th>
@@ -37,7 +64,6 @@
                 @Html.DisplayFor(modelItem => item.End)
             </td>
             <td>
-                <a asp-action="Edit" asp-route-id="@item.ID">Edit</a> |
                 <a asp-action="Details" asp-route-id="@item.ID">Details</a> |
                 <a asp-action="Delete" asp-route-id="@item.ID">Delete</a>
             </td>
@@ -45,3 +71,4 @@
 }
     </tbody>
 </table>
+<button type="button" class="button"><a class="button" href="/User/Create">Create New</a></button>
