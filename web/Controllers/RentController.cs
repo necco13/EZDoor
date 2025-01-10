@@ -55,11 +55,12 @@ namespace web.Controllers
         // GET: Rent/Create
 public IActionResult Create()
 {
+    var userId =  User.FindFirstValue(ClaimTypes.NameIdentifier);
     // Populate dropdown for Users
     ViewBag.Users = new SelectList(_context.Users, "Id", "UserName");
 
     // Populate dropdown for Properties
-    ViewBag.Properties = new SelectList(_context.Properties, "ID", "Name");
+    ViewBag.Properties = new SelectList(_context.Properties.Where(p => p.Landlord.Id == userId), "ID", "Name");
 
     return View();
 }
